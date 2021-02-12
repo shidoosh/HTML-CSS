@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 20% 20%;
+  background-color: #6E6FAB;
+  opacity: 0.7;
+}
+form {
+  padding: 5%;
+  background: #282746;
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+#description {
+  text-align: center;
+  font-style: italic;
+}
+.selects {
+  padding-left: 5%;
+}
+
+p, label {
+  color: white;
+  display: block;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* to make checkboxes sit next to text: */
+  position: relative;
+  vertical-align: middle;
+  bottom: 1px;
+}

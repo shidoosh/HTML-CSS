@@ -1,0 +1,47 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 200px;
+}
+/* for cellphones! */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 812px) {
+    #navbar {
+     display: block;
+     position: fixed; /* Set the navbar to fixed position */
+     top: 0; /* Position the navbar at the top of the page */
+     width: 100%; /* Full width */
+     background: blue;
+     color: white;
+    }
+}
+#main-doc {
+  padding-left: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

@@ -1,0 +1,60 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #EEEEE;
+  font-family: Noto Sans, sans-serif;
+}
+
+#title, #timeline-title, p {
+  text-align: center;
+}
+#title-caption {
+  font-style: italic;
+}
+
+#img-div {
+  background: #FFFFF;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+#tribute-info {
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+li {
+  margin: 10px 0;
+}
+
+#quote {
+  text-align: left;
+  font-style: italic;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+#tribute-link-p {
+  font-weight: bold;
+}

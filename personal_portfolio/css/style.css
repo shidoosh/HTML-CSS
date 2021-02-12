@@ -1,9 +1,8 @@
 /* Box Model Hack */
 * {
-     box-sizing: border-box;
-     display: flex; 
-     font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
+
 
 /* Clear fix hack */
 .clearfix:after {
@@ -23,9 +22,68 @@
 /* BASE STYLES
 /*******************************************/
 
-
 body {
+  margin: 1% 3% 3% 3%;
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Libre Baskerville', serif; */
+  /* font-family: 'Roboto', sans-serif; */
+  display: flex;
+  flex-direction: column;
+  background: #DADADA;
+}
 
+h1 {
+  padding: 50vh 0;
+  color: white;
+  opacity: 1;
+}
+
+h1, h2 {
+  font-style: italic;
+  text-transform: uppercase;
+}
+h1, #resume, #github {
+  text-align: center;
+  font-weight: bold;
+}
+
+#navbar {
+  float: right;
+}
+
+/*  todo: make background headshot of self, title superimposed on image */
+#welcome-section {
+  background: url("#") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.75;
+}
+
+section {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.work-tile {
+  padding: 20px;
+  margin: 1%;
+}
+.logo {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+#ucla-logo {
+  width: 75px;
+  height: 75px;
 }
 
 
